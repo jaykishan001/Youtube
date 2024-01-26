@@ -14,7 +14,8 @@ const SideBar = () => {
   if (isMenuOpen === 2) return null;
 
   return (
-    <div className='grid grid-flow-col'>
+    <div className='grid grid-flow-col mt-[4rem] bg-white'>
+
       <div className='flex gap-9 mt-6 flex-col  '>
 
         <ul className='flex gap-7 flex-col '>

@@ -1,6 +1,7 @@
 import React from 'react'
 
 const VideoCard = ({ info }) => {
+
     const { snippet, statistics } = info || {};
     const { channelTitle, title, thumbnails } = snippet || {};
 
@@ -22,22 +23,25 @@ const VideoCard = ({ info }) => {
 
             return (number / 1000).toFixed(1) + "k";
         }
-        // else if (number >= 1000) {
-        //     return (number / 1000).toFixed(1) + "k"
-        // }
-
         else {
             return number.toString();
         }
     }
 
+
     return (
         <div className='p-1 w-90 ml-4 mt-4 space-l-3 cursor-pointer'>
-            <img className='md:w-[25rem] rounded-lg' src={thumbnails?.medium?.url} alt="thumbnails" />
+            <img
+                className='md:w-[25rem] rounded-lg'
+                src={thumbnails?.medium?.url}
+                alt="thumbnails" />
+
             <ul className='md:w-[25rem]'>
+
                 <li className='font-bold'>{title}</li>
                 <li className='text-s'>{channelTitle}</li>
                 <li>{formatNumber(statistics.viewCount)}</li>
+
             </ul>
 
         </div >
