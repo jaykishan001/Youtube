@@ -1,4 +1,3 @@
-import React from 'react'
 import { useState, useEffect } from 'react';
 import YOUTUBE_VIDEOS_API from './constants';
 
