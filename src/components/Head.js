@@ -4,7 +4,7 @@ import { faBars, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleMenu } from '../utils/appSlice'
 import { YOUTUBE_SUGGESTION_API } from '../utils/constants'
-import { Searc } from 'react-router-dom'
+import { Search } from 'react-router-dom'
 import { cacheResult } from '../utils/searchSlice'
 
 
